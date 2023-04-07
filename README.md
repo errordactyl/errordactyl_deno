@@ -8,13 +8,11 @@ Errordactyl is a tool that automates HTTP endpoint testing and error handling fo
 
 ## Deno Installation
 
-Fork and clone the repository and install the errordactyl (edact) script into Deno's global bin.
-* **Note:** application permissions are still being scoped and optimized. 
+To install Errordactyl as a CLI tool in your project directory, make sure to have Deno installed. Then run
 
-```sh
-deno install -A 'path To edact.ts'
-```
-we are working on publishing to Deno Land so that installation can be more streamlined!
+```deno install --allow-read --allow-write --name edact https://github.com/errordactyl/errordactyl_deno/blob/98c25df560f1419fe62a83dc585072b9d1cf95b0/edact.ts```
+
+You may need to add the `./deno/bin` path to your PATH variable; Deno will prompt you if so.
 
 ## Configuration
 
@@ -30,7 +28,7 @@ router.get('/', (ctx) => {
 });
 ```
 
-Initialize errordactyl in the project that you are currently testing with  `edact init` and complete the inital prompts to create a config file in `projectRoot/_errordactyl/`
+Initialize Errordactyl in the project that you are currently testing with  `edact init` and complete the inital prompts to create a config file in `projectRoot/_errordactyl/`
 
 ```sh
 edact init
@@ -48,7 +46,7 @@ Edit the request body, parameters, and headers in  `/_errordactyl/config.json` a
 edact
 ```
 
-The generated output from the CLI would be:
+If errors are caught, the generated output from the CLI would be:
 
 ```javascript
 [
