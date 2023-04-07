@@ -77,6 +77,7 @@ export default class Test {
     console.log(this.td(await p.output()).trim())
 
     const STDERR = (this.td(await p.stderrOutput()).trim())
+    console.log('Error data:')
     console.log(errors(STDERR));
   }
 

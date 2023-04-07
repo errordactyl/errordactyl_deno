@@ -127,6 +127,5 @@ export default function errors(errorMessage: string): finalObjType[] | string {
           arrayOfUsefulErrorInformation.push(finalObj);
         }
       }
-      console.log('it still works after break week!')
       return arrayOfUsefulErrorInformation;
 }

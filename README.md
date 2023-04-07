@@ -10,7 +10,7 @@ Errordactyl is a tool that automates HTTP endpoint testing and error handling fo
 
 To install Errordactyl as a CLI tool in your project directory, make sure to have Deno installed. Then run
 
-```deno install --allow-read --allow-write --name edact https://github.com/errordactyl/errordactyl_deno/blob/98c25df560f1419fe62a83dc585072b9d1cf95b0/edact.ts```
+```deno install --allow-read --allow-write --allow-run --name edact https://raw.githubusercontent.com/errordactyl/errordactyl_deno/main/edact.ts```
 
 You may need to add the `./deno/bin` path to your PATH variable; Deno will prompt you if so.
 
