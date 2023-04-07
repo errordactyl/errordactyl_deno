@@ -1,7 +1,7 @@
 import { parse as parser } from 'https://deno.land/std@0.166.0/flags/mod.ts';
 import { parse } from './parse/parse.ts';
 import { init } from './init.ts';
-import Test from './test/class.ts'
+import Test from './run/class.ts'
 
 const args = parser(Deno.args);
 let body = '';
